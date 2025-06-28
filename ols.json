@@ -1,0 +1,6 @@
+{
+    "enable_document_symbols": true,
+    "$schema": "https://raw.githubusercontent.com/DanielGavin/ols/master/misc/ols.schema.json",
+    "enable_hover": true,
+    "enable_snippets": true
+}
