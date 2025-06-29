@@ -6,12 +6,12 @@ import "core:time"
 import "core:fmt"
 
 screen_width :: 80
-screen_height :: 22
+screen_height :: 32
 
 main :: proc() {
 	// Constants
-	r1: f32 = 1.0
-	r2: f32 = 2.0
+	r1 :f32 = 1.0
+	r2 :f32 = 2.0
 	k2 :f32 = 5
 
 
@@ -26,7 +26,7 @@ main :: proc() {
 
 	// Output and depth buffers
 	oBuffer: [screen_width][screen_height]u8
-	zBuffer: [screen_width][screen_height]f32	
+	zBuffer: [screen_width][screen_height]f32
 
 	// Clear screen
 	runtime.print_string("\x1b[2J")
@@ -95,7 +95,8 @@ main :: proc() {
 		angleA += 0.02
 		angleB += 0.04
 
-		// time.sleep(16 * time.Millisecond)
+		time.sleep(16 * time.Millisecond)
 		// fmt.printf("\x1b[23A")
 	}
 }
+
